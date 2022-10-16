@@ -1,5 +1,5 @@
 <template lang="">
-<div v-if="filteredCountries.length">
+<div v-if="countries.length">
     <Navbar></Navbar>
     <div class="container m-auto">
       <Control @getSelected="getCountries($event)" @searchCountry="searchin($event)"/>
