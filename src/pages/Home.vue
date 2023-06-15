@@ -1,13 +1,10 @@
 <template lang="">
-<div v-if="countries.length">
     <Navbar></Navbar>
     <div class="container m-auto">
       <Control @getSelected="getCountries($event)" @searchCountry="searchin($event)"/>
       <CountryContainer :countries="filteredCountries" />
       
     </div>
-  </div>
-   <Preloader v-else />
 </template>
 <script>
     import CountryItem from '../components/CountryItem.vue';
